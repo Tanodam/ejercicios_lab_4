@@ -22,12 +22,10 @@ export class LoginComponent implements OnInit {
     if(this.usuario.email === "admin@mail.com" && this.usuario.pass === "1234")
     {
       this.route.navigate(["home"]);
-      console.log("OK");
     }
     else
     {
       this.route.navigate(["error"]);
-      console.log("NO");
     }
   }
 
